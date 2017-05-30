@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+/*
+#authors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+*/
+
+.form__input {
+    width: 80%;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.jumbotron h1 {
+    text-align: center;
+}
+
+.thumbnail {
+   
+    text-align: center;
+}
+
+@media (max-width: 766px) {
+    
+    .thumbnail{
+         margin: 0 auto;
+    }
+    
+    .mobile--padding {
+        padding-bottom: 20px;
+    }
+}
+
+.movie__container {
+     width: 370px;
+    height: 500px;
+    
+}
+
+.movie__poster {
+    width: 250px;
+    min-height: 375px;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+.movieInfo__row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.movie__link {
+    display: block;
+}
+
+.actors {
+    width: 350px;
+}
+
+.movie__listInfo {
+    list-style: none;
+    padding-left: 0;
+}
