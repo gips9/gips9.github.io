@@ -1,0 +1,1 @@
+console.log("to jest main.js script"),console.log("script");

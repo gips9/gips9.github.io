@@ -1,0 +1,81 @@
+.page-navigation {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    
+    opacity: 0;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+    
+    @media(min-width: 1024px) {
+        opacity: 1;
+        background-color: transparent;
+        width: auto;
+        position: static;
+        flex: 1;
+        
+    }
+    
+    &__heading {
+        @include visuallyHidden;
+    }
+    
+    &__container {
+        margin: 0;
+        padding-left: 0;
+        padding-top: 4em;
+        
+        @media(min-width: 1024px) { 
+            display: flex;
+            padding-top: 1em;
+            justify-content: flex-end;
+        }
+    }
+    
+    &__item {
+        list-style: none;
+        text-align: center;
+        padding-bottom: 1em;
+        
+        @media(min-width: 700px) { 
+            margin-right: 1em;
+        }
+        
+        a {
+            text-decoration: none;
+            font-family: 'Dosis';
+            
+            @media(min-width: 1024px) { 
+                color: #ffffff;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    
+    
+    
+    
+    &--is-expanded {
+        opacity: 1;
+        transform:scale(1)
+        
+    }
+    
+
+    
+}
+
+.link {
+    
+    .page-navigation__item a {
+     
+        color: #000000;
+    }
+    
+}
+

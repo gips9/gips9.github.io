@@ -1,0 +1,155 @@
+.works {
+    
+    background-color: #28282e;
+    
+     @media(min-width: 1024px) {
+            min-height: 60em;
+        }
+    
+    &__wrapper {
+        padding-bottom: 3em;
+        @media(min-width: 1024px) {
+            min-height: 60em;
+            padding-bottom: 0;
+            width:100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+    
+    &__row {
+         @media(min-width: 1024px) {
+            display: flex;
+             align-items: center;
+        }
+    }
+    
+    &__cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+         @media(min-width: 1024px) {
+            flex: 1;
+             width: 50%;
+             margin: 0 auto;
+             justify-content: center;
+             padding-left: 9em;
+        }
+    }
+    
+    &__TabletBackground {
+        
+        
+        
+        @media(min-width: 1024px) {
+            background: url('../../img/tablet.png');
+            background-position: 20% 0%;
+            background-size: cover;
+            height: 35em;
+            width: 50%;
+        }
+      
+    }
+    
+    &__container {
+        
+        @media(min-width: 1024px) {
+            margin-right: 5em;
+        }
+        
+
+    }
+    
+    &__title {
+        font-family: "Dosis-Bold";
+        font-size: 2.5rem;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        text-transform: uppercase;
+        position: relative;
+    }
+    
+    &__title:before{
+        
+        content: "";
+        position: absolute;
+        height: 0.2em;
+        width: 1.5em;
+        border-bottom: 0.2em solid #f16522;
+        border-radius: 0.1em;
+        bottom: -0.8em;
+        left: 2.5em;
+    }
+    
+    &__text {
+        text-align: center;
+        color: #555560;
+        font-size: 1.5rem;
+    }
+    
+    &__text--left {
+        text-align: left;
+        color: #555560;
+        font-size: 1.5rem;
+        width: 100%;
+        border-bottom: 1px dashed #42424a;
+        padding-bottom: 3em;
+        
+        @media(min-width: 1024px) {
+            width: 30em;
+        }
+    }
+    
+    &__address {
+        color: #ffffff;
+        font-family: 'Dosis-Bold';
+        font-size: 1.8rem;
+        letter-spacing: 0.05em;
+        width: 100%;
+        text-align: center;
+        
+        @media(min-width: 1024px) { 
+            text-align: left;
+        }
+    }
+    
+    &__info {
+        display: flex;
+        width: 100%;
+        color: #878796;
+        font-family: 'Open Sans';
+        justify-content: center;
+        
+        @media(min-width: 1024px) { 
+            padding-bottom: 12em;
+            justify-content: flex-start;
+        }
+        
+        
+    }
+    
+    &__info-cell {
+        display:flex;
+        flex-direction: column;
+        line-height: 2em;
+        
+    }
+    
+    &__info-cell:nth-child(2) {
+        
+        padding-left: 10em;
+        
+        @media(min-width: 1024px) { 
+            padding-left: 2em;
+        }
+        
+    }
+    
+    &__info-link {
+        text-decoration: none;
+        color: #e76223;
+    }
+    
+}

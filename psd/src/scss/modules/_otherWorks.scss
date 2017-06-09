@@ -1,0 +1,112 @@
+.otherWorks {
+    
+    background-color: #222227;
+    padding-bottom: 2em;
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        @media(min-width: 1024px) {
+            flex-direction: row;
+            padding-top: 4em;
+            padding-bottom: 4em;
+        }
+        
+    }
+    
+    &__icon {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        padding:2em;
+        margin-top: 2em;
+        background-color: #28282e;
+        
+        @media(min-width: 1024px) {
+            width: 30em;
+            align-items: center;
+            margin-right: 2.5em;
+        }
+        
+    }
+    
+    &__text {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        margin-top: 2em;
+        background-color: #ffffff;
+        margin-bottom: 2em;
+        
+        @media(min-width: 1024px) {
+            width: 30em;
+            margin-bottom: 0;
+        }
+    }
+    
+    &__title {
+        font-family: 'Open Sans';
+        font-size: 2rem;
+        font-weight: normal;
+        text-align: center;
+        color: #222227;
+    }
+    
+    &__title--bold {
+        font-weight: bold;
+        color: #25252a;
+    }
+    
+    &__paragraph {
+        text-align: center;
+        color: #9797a4;
+        line-height: 1.3em;
+        letter-spacing: 0.05em;
+        font-size: 1.4rem;
+        
+        &-link {
+            display:inline-block;
+            text-decoration: none;
+            margin-right: 0.2em;
+            color: #58585b;
+        }
+    }
+    
+    &__link {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: #f16522;
+        font-size: 1.5rem;
+        font-family: 'Open Sans';
+        
+    }
+    
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    &__controls {
+        background-color: transparent;
+        padding: 0.2em 0.7em;
+        font-size: 2rem;
+        color: #595963;
+        cursor: pointer;
+        border: 1px dashed #595963;
+    }
+    
+    &__button {
+        background-color: #000000;
+        border: 1px dashed #595963;
+        padding: 1.5em;
+        margin: 0 1em;
+    }
+    
+   
+}
+

@@ -1,0 +1,105 @@
+.industries {
+    
+    &__row {
+        
+        
+        @media(min-width: 1024px) {
+            display: flex;    
+        }
+    }
+    
+    &__row:nth-child(2) {
+        display:none;
+        
+        @media(min-width: 1024px) {
+            display: flex;    
+        }
+    }
+    
+    &__content {
+        
+        
+        @media(min-width: 1024px) {
+            width: 50%;    
+        }
+    }
+    
+    &__title {
+        font-family: 'Dosis-Bold';
+        color: #3d3d3d;
+        font-size: 3rem;
+        margin-bottom: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    &__title2 {
+        font-family: 'Dosis-Bold';
+        color: #3d3d3d;
+        font-size: 1.8rem;
+        margin-top: 0;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        
+    }
+    
+    &__title2:before {
+        content: "";
+        position: absolute;
+        height: 0.2em;
+        width: 1.5em;
+        border-bottom: 0.2em solid #f16522;
+        border-radius: 0.1em;
+        bottom: -0.8em;
+        left:46%;
+    }
+    
+    &__text {
+        font-family: 'Open-Sans';
+        color: #828282;
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: 2em;
+        
+    }
+    
+    &__cell {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 2em 1em;
+        padding: 4em;
+        border: 1px solid;
+        
+        
+        @media(min-width: 1024px) {
+            flex: 1;
+            width: 80%;
+        }
+    }
+    
+    &__icon-marketing {
+        display:block;
+        width: 4.5em;
+        height: 3.5em;
+        background: url(../../img/icon-photo.png);
+        background-repeat: no-repeat;
+        margin-bottom: 1em;
+    }
+    
+    &__icon-sport {
+        display:block;
+        width: 4.5em;
+        height: 3.5em;
+        background: url(../../img/icon-sport.png);
+        background-repeat: no-repeat;
+        margin-bottom: 1em;
+    }
+    
+    &__button {
+        background-color: #f16522;
+        border: none;
+    }
+}
