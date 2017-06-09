@@ -1,1 +1,1 @@
-[a link](https://gips9.github.io)
+[Live](https://gips9.github.io)
