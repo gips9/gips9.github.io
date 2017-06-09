@@ -1,0 +1,84 @@
+.about {
+    background: url(../../img/about-bg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    @media(min-width: 1024px) {
+        min-height: 66em;
+        background-position: 30%;
+        
+    }
+    
+   
+    &__manBackground {
+        
+        @media(min-width: 1024px) {
+            background: url(../../img/manAbout.png);
+            background-repeat: no-repeat;
+            background-position: 12% 0;
+            height: 66em;
+            
+        }
+    }
+    
+    &__content {
+        flex-direction: column;
+        padding-bottom: 3em;
+       
+        
+         @media(min-width: 1024px) {
+            position: absolute;
+            max-width: 550px;
+            top:25%;
+            right: 0;
+        }
+        
+        @media(min-width: 1600px) {
+             position: absolute;
+            right: 15%;
+            
+        }
+    }
+    
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: #3d3d3d;
+        font-family: 'Dosis', sans-serif;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    &__subtitle {
+        text-transform: uppercase;
+        margin-top: 0;
+        position: relative;
+        color: #3d3d3d;
+        font-family: 'Dosis', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+      &__subtitle:before {
+        content: "";
+        position: absolute;
+        height: 0.2em;
+        width: 1.5em;
+        border-bottom: 0.2em solid #f16522;
+        border-radius: 0.1em;
+        bottom: -0.8em;
+        left:46%;
+    }
+    
+    &__text {
+        font-family: 'Dosis', sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.2em;
+        
+    }
+    
+    &__text--padding{
+        padding-bottom: 2em;
+    }
+}

@@ -1,0 +1,19 @@
+.button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #363636;
+    padding: 1.3em 1.4em;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    width: 15em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-align: center;
+    
+    &--center{
+        display: block;
+        margin: 0 auto;
+    }
+}

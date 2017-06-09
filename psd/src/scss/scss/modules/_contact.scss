@@ -1,0 +1,119 @@
+.contact{
+    
+    background-color: #e7eaed;
+    padding: 3em 0;
+    
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+        
+        @media(min-width: 1024px) { 
+            
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+        
+        }
+    }
+    
+    
+    &__agency {
+        width: 22em;
+        padding-bottom: 2em;
+        
+        @media(min-width: 1024px) { 
+            
+           flex: 1;       
+           padding-bottom: 0;
+        
+        }
+        
+    }
+    
+    &__agency-title{
+         margin-top: 0;
+         font-size: 1.7rem;
+         margin-bottom: 0.7em;
+    }
+    
+    &__agency-rights {
+        display: block;
+        padding-bottom: 1.5em;
+    }
+    
+    &__agency-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Open-Sans';
+        color: #f16522;
+    }
+    
+    &__address {
+        display: flex;
+        flex-direction: column;
+        width: 22em;
+        padding-bottom: 2em;
+        
+         @media(min-width: 1024px) { 
+            
+            flex-direction: row;
+             justify-content: space-between;
+             flex: 2;
+             padding-bottom: 0;
+        
+        }
+
+    }
+    
+   
+    
+    &__address-title {
+        text-transform: uppercase;
+        font-family: 'Dosis';
+        font-style: normal;
+        font-weight: bold;
+    }
+    
+    &__address-cell dd {
+        margin-left: 0;
+        padding-bottom: 0.8em;
+        font-family: 'Open-Sans';
+        font-style: normal;
+    }
+    
+    &__email {
+        display: flex;
+        flex-direction: column;
+     @media(min-width: 1024px) { 
+            
+               
+               padding-left: 5em;
+        
+            }
+        
+        
+    }
+    
+    &__email-subscription {
+        display: block;
+        text-transform: uppercase;
+        font-family: 'Dosis';
+        font-weight: bold;
+        padding-bottom: 1.5em;
+    }
+    
+    &__email input {
+        width: 20em;
+        height: 3em;
+        background: url(../../img/close-envelope.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 95% 50%;
+        padding-right: 2em;
+    }
+}
+
+
+

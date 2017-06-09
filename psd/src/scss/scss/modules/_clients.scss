@@ -1,0 +1,128 @@
+#clients {
+    display: flex;
+    position: relative;
+}
+
+.clients {
+    
+  display: flex;
+    
+    &__trapezoid {
+        
+         width: 40%;
+            height: 0;
+            border-top: 0 solid;
+            border-right: 33px solid rgba(0,0,0,0);
+            border-bottom: 100px solid #f8f8f8;
+            border-left: 0 solid rgba(0,0,0,0);
+            color: rgba(0,0,0,1);
+            text-overflow: clip;
+            transform: rotateX(180deg) rotateY(-360deg);
+        
+        @media(min-width: 1024px) {
+           
+        }
+    
+    }
+    
+    &__cell {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+    
+    &__title {
+        font-family: 'Dosis';
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: #f2824d;
+        position: relative;
+    }
+    
+     &__link:after {
+          content: "";
+          position: absolute;
+          left: 4em;
+          width: 0; 
+          height: 0; 
+          border-top: 0.5em solid transparent;
+          border-bottom: 0.5em solid transparent;
+          border-left: 0.5em solid #f2824d;
+    }
+    
+    &__icons {
+        
+        display: none;
+        
+        @media(min-width: 1024px) {
+                 display: flex;
+            flex: 1;
+    //        padding: 0;
+
+            & li {
+                list-style: none;
+                padding-left: 2em;
+                margin: auto 0;
+            }
+        }
+   
+    }
+   
+    
+    &__365App{
+        background-image: url(../../img/365App.png);
+        
+        display:block;
+        width: 13.5em;
+        height: 5em;
+    }
+    
+    &__getLicensed{
+        background-image: url(../../img/getLicensed.png);
+        display:block;
+        width: 16em;
+        height: 5em;
+    }
+    
+      &__hotJobs{
+        background-image: url(../../img/hotJobs.png);
+          background-position: top;
+        
+        display:block;
+        width: 10em;
+        height: 6em;
+    }
+    
+     &__vng{
+        background-image: url(../../img/vng.png);
+          
+        
+        display:block;
+        width: 8em;
+        height: 6em;
+    }
+    
+     &__driveMe{
+        background-image: url(../../img/driveMeSafely.png);
+          
+        
+        display:block;
+        width: 8em;
+        height: 5em;
+    }
+    
+     &__toni{
+        background-image: url(../../img/toni&guy.png);
+          background-position: top;
+        
+        display:block;
+        width: 16em;
+        height: 8em;
+    }
+    
+    
+}

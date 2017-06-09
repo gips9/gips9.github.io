@@ -1,0 +1,95 @@
+.marketing {
+    background-color: #f1f1f1;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+    &__wrapper {
+        @media(min-width: 1024px) {
+        
+        display: flex;  
+        
+        }
+    }
+    
+    &__mockup {
+        
+        @media(min-width: 1024px) {
+            background: url(../../img/mockup.png);
+            background-size: cover;
+            background-position:center;
+            height: 40em;
+            width: 80em;
+            margin-right: 10em;
+            
+        }
+        
+        
+    }
+    
+    &__title {
+        font-family: 'Dosis-Bold';
+        font-size: 2.5rem;
+        color: #3d3d3d;
+        text-align: center;
+        margin-bottom: 0.2em;
+        text-transform: uppercase;
+        
+        @media(min-width: 1024px) { 
+            padding-top: 2em;
+        }
+    }
+    
+    &__title2 {
+        font-family: 'Dosis-Bold';
+        font-size: 1.5rem;
+        color: #3d3d3d;
+        text-align: center;
+        margin-top: 0;
+        position: relative;
+        text-transform: uppercase;
+        margin-bottom: 2em;
+        
+    }
+    
+      &__title2:before {
+        content: "";
+        position: absolute;
+        height: 0.2em;
+        width: 1.5em;
+        border-bottom: 0.2em solid #f16522;
+        border-radius: 0.1em;
+        bottom: -0.6em;
+        left:46%;
+    }
+    
+    &__text {
+        font-family: 'Open-Sans';
+        font-size: 1.2rem;
+        letter-spacing: 0.05em;
+        line-height: 1.4em;
+        text-align: center;
+        color: #3d3d3d;
+        
+    }
+    
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 3em;
+    }
+    
+    &__button--black {
+        border: none;
+        letter-spacing: 0.4em;
+        
+    }
+    
+    &__button--transparent {
+        background: transparent;
+        border: 0.1em solid #e76223;
+        color: #e76223;
+        letter-spacing: 0.4em;
+        margin-left: 2em;
+        
+    }
+}

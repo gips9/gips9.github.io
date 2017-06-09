@@ -1,0 +1,49 @@
+.page-header {
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    padding: 4em 0;
+    background: transparent;
+    height: 10em;
+    transition: height 500ms, background 500ms;
+    
+   
+    
+     &--large{
+        @media (min-width: 1024px){
+            flex: 0;
+        }
+         
+    }
+    &__logo-link {
+        
+        
+        z-index: 11;
+    }
+    
+    &__logo {
+        width: 4em;
+    }
+}
+
+.page-header--tiny {
+    
+    height: 6em;
+//    padding: 1em 0;
+    background: rgba(255,255,255,1);
+    
+    
+    .page-header__logo {
+        width: 3em;
+        
+    }
+    
+    .page-header__logo-container {
+        z-index: 11;
+    }
+}
+
+
+

@@ -1,0 +1,168 @@
+.home {
+    position: relative;
+//    background-image: url(../../img/blueBackground.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    
+    &__content {
+        height: 100vh;
+        background-image: url(../../img/blueBackground.png);
+        background-size: cover;
+        background-position: right;
+        flex: 1;
+        
+        @media(min-width: 1024px) {
+            position: relative;
+        }
+    }
+    
+   
+    
+    &__heading {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 4rem;
+        font-family: 'Dosis', sans-serif;
+        letter-spacing: 0.05em;
+        text-align: center;
+        
+        @media (min-width: 1024px){
+            text-align: left;
+            font-size: 4.5rem;
+            color: #ffffff;
+        }
+    }
+    
+    &__subHeading {
+        position: relative;
+        margin-top: 0;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 2rem;
+        font-family: 'Dosis', sans-serif;
+        letter-spacing: 0.05em;
+        text-align: center;
+        
+        @media (min-width: 1024px){
+            text-align: left;
+            font-size: 2.7rem;
+        }
+        
+    }
+    
+    &__subHeading:before {
+        content: "";
+        position: absolute;
+        height: 0.2em;
+        width: 2em;
+        border-bottom: 0.2em solid white;
+        border-radius: 0.1em;
+        bottom: -0.8em;
+        left:46%;
+        
+        @media (min-width: 1024px){
+            left:0;
+        }
+    }
+    
+    &__text {
+        color: rgba(255,255,255, 0.7);
+        line-height: 2.5;
+        padding-top: 1em;
+        font-family: 'Open Sans', sans-serif;
+        width: 80%;
+        margin: 0 auto;
+        
+        @media (min-width: 1024px){
+            font-size: 1.1rem;
+            width: 100%;
+        }
+    }
+    
+    &__scroll {
+        position: absolute;
+        left: 48.5%;
+        bottom:5.6em;
+        width: 0;
+	    height: 0;
+	    border: 2em solid transparent;
+	    border-bottom-color: #ffffff;        
+    }
+    
+    &__scroll:after {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 20px;
+        width: 0;
+        height: 0;
+        border: 2em solid transparent;
+        border-top-color: #ffffff;
+        
+    
+    }
+    
+    &__scroll--arrow {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        width: 9px;
+        height: 9px;
+        margin-left: -4px;
+        border-left: 3px solid gray;
+        border-bottom: 3px solid gray;
+        transform: rotate(-45deg);
+        z-index: 2;
+        
+    }
+    
+
+   
+    &__background {
+        
+        &-dots {
+            position: absolute;
+            top: 45%;
+            color: #ffffff;
+            font-size: 1.2rem;
+            line-height: 0.8em;
+            
+            & li:nth-child(3) {
+                color: #f16522;
+            }
+        }
+        
+         @media (min-width: 1024px){
+        
+            background: url(../../img/manBackground.png);
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            flex: 1;    
+             
+        }
+        
+        
+    }
+    
+    &--large {
+        
+        @media(min-width: 1024px) {
+            max-width: 33em;
+             flex-direction: column;
+            position: absolute;
+            right: 12em;
+        }
+    }
+    
+     &--small {
+        
+        @media(min-width: 0) {
+            flex-direction: column;
+        }
+    }
+    
+    
+}
